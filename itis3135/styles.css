@@ -1,3 +1,28 @@
+body{
+    background-color: #fdfe;
+}
 h1{
     font-family: sans-serif;
+    background-color: lightcyan;
+}
+h2{
+    text-align:center;
+    font-size: 36px;
+}
+
+img{
+    width:25%;
+    height:25%;
+}
+
+nav{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer>div>ul{
+    display:flex;
+    justify-content: center;
+}
+footer>div>ul>li{
+    display:inline-block;
+    padding:0.2rem;
 }
