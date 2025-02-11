@@ -51,3 +51,6 @@ footer>div>ul>li{
     display:inline-block;
     padding:0.2rem;
 }
+p>a{
+    text-decoration: none;
+}
