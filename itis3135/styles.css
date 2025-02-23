@@ -43,6 +43,9 @@ nav{
     text-align: center;
     padding-top: 1rem;
 }
+nav>a{
+    color: darkcyan;
+}
 footer>div>ul{
     display:flex;
     justify-content: center;
@@ -50,6 +53,10 @@ footer>div>ul{
 footer>div>ul>li{
     display:inline-block;
     padding:0.2rem;
+    
+}
+footer>p>a{
+    color: darkcyan;
 }
 p>a{
     text-decoration: none;
