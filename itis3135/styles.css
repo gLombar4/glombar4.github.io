@@ -1,6 +1,10 @@
 body{
     background-color: #fdfe;
 }
+main{
+    max-width: 1200px; /* Adjust as needed */ 
+    margin: 0 auto;
+}
 h1{
     font-family: sans-serif;
     background-color: lightcyan;
@@ -60,4 +64,16 @@ footer>p>a{
 }
 p>a{
     text-decoration: none;
+}
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and (min-width:981px) and (max-width: 1400px){
+    #colorbox{
+        background-color: lightgray;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and (min-width:370px) and (max-width: 600px){
+    #colorbox{
+        background-color: lightgray;
+    }
 }
