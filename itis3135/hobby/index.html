@@ -7,42 +7,144 @@
     <title>Shin Megami Tensei: True Goddess Reincarnation || Hobby Site</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onload="onLoad()">
     <header>
         <h1>Shin Megami Tensei: True Goddess Reincarnation</h1>
+        <nav>
+            <a href="#personal-experience" onclick="hideSections('personal-experience')">My Personal Experience</a>
+            <img src="./images/favicon-16x16.png" alt="">
+            <a href="#what" onclick="hideSections('what')">What is SMT</a>
+            <img src="./images/favicon-16x16.png" alt="">
+            <a href="#timeline" onclick="hideSections('timeline')">Timeline/History</a>
+            <img src="./images/favicon-16x16.png" alt="">
+            <a href="#platforms" onclick="hideSections('platforms')">Platforms</a>
+            <img src="./images/favicon-16x16.png" alt="">
+            <a href="#how" onclick="hideSections('how')">Gameplay Basics</a>
+            <img src="./images/favicon-16x16.png" alt="">
+            <a href="#why" onclick="hideSections('why')">Why play SMT?</a>
+        </nav>
     </header>
 
     <main>
         <!--Minimum of 3 total things of content under each h2-->
         <!--At least a figure on each section (img and figcaption))-->
-        <section>
+        
+        <section id="personal-experience">
             <!--My history with the series-->
             <h2>My personal experience with the series</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    
+                </figcaption>
+            </figure>
+            <p>Placeholder Text</p>
         </section>
 
-        <section>
+        <section class="what" id="what">
             <!--What is SMT?-->
-            <h2>So what IS SMT?</h2>
+            <h2>What is SMT?</h2>
+            <figure>
+                <img src="./images/smtlogo.png" alt="SMT Series Logo">
+                <figcaption>
+                    <em>The series logo. The kanji reads "Shin Megami Tensei".</em>
+                </figcaption>
+        </figure>
+        <p>Placeholder Text</p>
+
         </section>
 
-        <section>
+        <section id="timeline">
             <!--Timeline of SMT-->
             <h2>Timeline of the series</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+
+                </figcaption>
+            </figure>
+            <table>
+                <tr> <!--Columns-->
+                    <th>Name</th>
+                    <th>Release Date</th>
+
+                </tr>
+                <tr>
+                    <td>Digital Devil Story: Megami Tensei</td>
+                    <td>1986</td>
+                </tr>
+                <tr>
+                    <td>Shin Megami Tensei</td>
+                    <td>1992</td>
+                </tr>
+                <tr>
+                    <td>Shin Megami Tensei II</td>
+                    <td>1994</td>
+                </tr>
+                <tr>
+                    <td>Shin Megami Tensei: Nocturne</td>
+                    <td>2003</td>
+                </tr>
+                <tr>
+                    <td>Shin Megami Tensei IV</td>
+                    <td>2013</td>
+                </tr>
+                <tr>
+                    <td>Shin Megami Tensei V</td>
+                    <td>2021</td>
+                </tr>
+            </table>
+            <p>Placeholder Text</p>
         </section>
 
-        <section>
+        <section id="platforms">
             <!--Platforms & their history with the series-->
             <h2>SMT on different platforms</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    
+                </figcaption>
+            </figure>
+            <p>Placeholder Text</p>
         </section>
 
-        <section>
+        <section id="how">
             <!--How to play-->
             <h2>Gameplay basics and how to get started</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    
+                </figcaption>
+            </figure>
+            <p>Placeholder Text</p>
         </section>
 
-        <section>
+        <section id="why">
             <!--What draws people to the series-->
             <h2>Why play this series?</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    
+                </figcaption>
+            </figure>
+            <!--Explain the uniqueness-->
+            <p>Placeholder Text</p>
+
+            <!--Add in quotes from others-->
+            <p>Below I've collected thoughts from a few friends on what draws
+                them to the series, and why you should check it out!
+            </p>
+            <ul>
+                <li>I really think smt/persona games have had some of the most 
+                    unique and maybe iconic soundtracks 
+                    in all of gaming. -Sabrina</li>
+                <li>
+                    Second one
+                </li>
+            </ul>
         </section>
 
     </main>
@@ -50,6 +152,6 @@
     <footer>
 
     </footer>
-    
+    <script src="script.js" defer></script>
 </body>
 </html>
