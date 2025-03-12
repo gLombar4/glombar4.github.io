@@ -1,27 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
-    <link rel="stylesheet" href="default.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shin Megami Tensei: True Goddess Reincarnation || Hobby Site</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+
+        html{
+            background-color: lightgrey;
+        }
+        body{
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 95%;
+        }
+        @font-face {
+            font-family: Nocturne-normal;
+            src: url("./fonts/Nocturne-normal.otf") format("opentype");
+        }
+        @font-face {
+            font-family: BirchStd;
+            src: url("./fonts/BirchStd.otf") format("opentype");
+        }
+        h1{
+            text-align: center;
+            font-family: 'Nocturne-normal', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: crimson;
+        }
+        h2{
+            
+            text-align: center;
+            font-family: 'BirchStd', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 50px;
+        }
+        section>p,ul{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        section>p{
+            background-color:white;
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+        section.what>figure>img{
+            width:40%;
+            justify-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section.what>figure>figcaption{
+            text-align: center;
+        }
+
+        nav{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+                }
+        nav>a{
+            text-decoration: none;
+            color: darkred;
+        }
+        nav>img{
+            margin-top: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            padding: 0.25rem;
+        }
+        table{
+            margin: auto auto;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul>li{
+            padding:5px;
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body onload="onLoad()">
     <header>
         <h1>Shin Megami Tensei: True Goddess Reincarnation</h1>
         <nav>
-            <a href="#personal-experience" onclick="hideSections('personal-experience')">My Personal Experience</a>
+            <a href="#top" onclick="hideSections('personal-experience')">My Personal Experience</a>
             <img src="./images/favicon-16x16.png" alt="">
-            <a href="#what" onclick="hideSections('what')">What is SMT</a>
+            <a href="#top" onclick="hideSections('what')">What is SMT</a>
             <img src="./images/favicon-16x16.png" alt="">
-            <a href="#timeline" onclick="hideSections('timeline')">Timeline/History</a>
+            <a href="#top" onclick="hideSections('timeline')">Timeline/History</a>
             <img src="./images/favicon-16x16.png" alt="">
-            <a href="#platforms" onclick="hideSections('platforms')">Platforms</a>
+            <a href="#top" onclick="hideSections('platforms')">Platforms</a>
             <img src="./images/favicon-16x16.png" alt="">
-            <a href="#how" onclick="hideSections('how')">Gameplay Basics</a>
+            <a href="#top" onclick="hideSections('how')">Gameplay Basics</a>
             <img src="./images/favicon-16x16.png" alt="">
-            <a href="#why" onclick="hideSections('why')">Why play SMT?</a>
+            <a href="#top" onclick="hideSections('why')">Why play SMT?</a>
         </nav>
     </header>
 
@@ -31,14 +109,34 @@
         
         <section id="personal-experience">
             <!--My history with the series-->
-            <h2>My personal experience with the series</h2>
+            <h2>My Personal Experience With the Series</h2>
+            <!--TODO: Picture of P5 Hours/Steam Library-->
             <figure>
                 <img src="" alt="">
                 <figcaption>
                     
                 </figcaption>
             </figure>
-            <p>Placeholder Text</p>
+            <p><img src="./images/favicon-16x16.png" alt="">
+                Any discussion of SMT today is impossible without mention
+                of Persona, and this page will be no exception. Persona began
+                as a spinoff of SMT, but has since blossomed into something
+                more successful than its progenitor. The very thing
+                that got me started in this series was playing Persona 5
+                back in high school. As you can tell from the image above, I 
+                have since replayed it many many times, including the re-release
+                Persona 5 Royal.
+            </p>
+            <p><img src="./images/favicon-16x16.png" alt="">
+                After binging all the persona games, I got curious of the series
+                origins. SMT IV and Nocturne looked appealing, so I started with IV
+                and was hooked. The gameplay, while similar, held crucial differences
+                seperating it from Persona (Check out the gameplay section on this
+                page!). I couldn't get enough after IV and 
+                eventually played through the whole catalog of mainline titles and 
+                a few spinoffs, emulating & translation patching my way 
+                through the series. Now, I eagerly await the next game.
+            </p>
         </section>
 
         <section class="what" id="what">
@@ -50,13 +148,27 @@
                     <em>The series logo. The kanji reads "Shin Megami Tensei".</em>
                 </figcaption>
         </figure>
-        <p>Placeholder Text</p>
+        <p><img src="./images/favicon-16x16.png" alt="">
+            Shin Megami Tensei (SMT) is a Japanese Role Playing Game series
+            developed by Atlus. The main series gameplay is turn-based,
+            though there are many spin-off titles that change up this
+            formula. This is my personal fan site to show my appreciation
+            for the series, and hopefully give you, the reader, some cool
+            info on it! As of now, the most recent game in the series is 
+            the re-release of SMT V (SMT V: Vengeance), released in 2024.
+        </p>
+        <p><img src="./images/favicon-16x16.png" alt="">
+            The nav bar at the top is in no particular order,
+            but I'd reccommend saving the "why" section for
+            last.
+        </p>
 
         </section>
 
         <section id="timeline">
             <!--Timeline of SMT-->
-            <h2>Timeline of the series</h2>
+            <h2>Timeline of the Series</h2>
+            <!--TODO: Picture of DDS Novel Cover-->
             <figure>
                 <img src="" alt="">
                 <figcaption>
@@ -94,36 +206,53 @@
                     <td>2021</td>
                 </tr>
             </table>
-            <p>Placeholder Text</p>
+                <p><img src="./images/favicon-16x16.png" alt="">
+                    Despite its widespread acclaim as a game series now, SMT has its roots
+                in the "Digital Devil Story" novel series authored by Aya Nishitani (The first
+                item in the table above). </p>
+                <p><img src="./images/favicon-16x16.png" alt="">
+                    Many games adapting this first novel have been made,
+                but Atlus has since taken the series in their own direction starting with
+                "Digital Devil Story: Megami Tensei II" for the Super Famicom in 1990.</p>
+                <p><img src="./images/favicon-16x16.png" alt="">
+                    As you can probably tell from the table above, there
+                has been a wide gap in main series releases since Nocturne. Spin-offs,
+                the sister series Persona, and upgraded rereleases keep the fans happy
+                in the off periods.</p>
         </section>
 
         <section id="platforms">
             <!--Platforms & their history with the series-->
-            <h2>SMT on different platforms</h2>
+            <h2>SMT on Different Platforms</h2>
+            <!--TODO: Collage of platforms the series has appeared on-->
             <figure>
                 <img src="" alt="">
                 <figcaption>
                     
                 </figcaption>
             </figure>
-            <p>Placeholder Text</p>
+            <p><img src="./images/favicon-16x16.png" alt="">
+                Placeholder Text</p>
         </section>
 
         <section id="how">
             <!--How to play-->
-            <h2>Gameplay basics and how to get started</h2>
+            <h2>Gameplay Basics and How to Get Started</h2>
+            <!--TODO: SMT V Battle Screen-->
             <figure>
                 <img src="" alt="">
                 <figcaption>
                     
                 </figcaption>
             </figure>
-            <p>Placeholder Text</p>
+            <p><img src="./images/favicon-16x16.png" alt="">
+                Placeholder Text</p>
         </section>
 
         <section id="why">
             <!--What draws people to the series-->
-            <h2>Why play this series?</h2>
+            <h2>Why Play This Series?</h2>
+            <!--TODO: SMT IV Samurai looking out at Tokyo from Sky Tower-->
             <figure>
                 <img src="" alt="">
                 <figcaption>
@@ -131,20 +260,45 @@
                 </figcaption>
             </figure>
             <!--Explain the uniqueness-->
-            <p>Placeholder Text</p>
+            <p><img src="./images/favicon-16x16.png" alt="">
+                If you are drawn to turn-based games then I've no doubt you'll find SMT
+                unforgettable. If you're unsure where to start, try Persona. That's
+                where I started after all!
+                The music, atmosphere, and themes tying the series together are quite compelling,
+                and unlike anything I've seen in another game before or since.
+                Not to mention the gameplay is just fun by itself.
+            </p>
 
             <!--Add in quotes from others-->
-            <p>Below I've collected thoughts from a few friends on what draws
+            <p><img src="./images/favicon-16x16.png" alt="">
+                Below I've collected thoughts from a few friends on what draws
                 them to the series, and why you should check it out!
             </p>
-            <ul>
-                <li>I really think smt/persona games have had some of the most 
-                    unique and maybe iconic soundtracks 
-                    in all of gaming. -Sabrina</li>
-                <li>
-                    Second one
-                </li>
-            </ul>
+            <p style="background-color: black;"></p>
+            <p style="width:50%; float:left;"><img src="./images/favicon-16x16.png" alt="">
+                "I really think smt/persona games have had some of the most 
+                unique and maybe iconic soundtracks 
+                in all of gaming."" -Sabrina </p>
+            
+            <p style="width:50%; float:right;"><img src="./images/favicon-16x16.png" alt="">
+                "I love the persona series, its combat, story, and 
+                characters all shine in a stunning way 
+                with the games looks and each games 
+                vibe that it creates. The music contributes to 
+                this heavily with each game having a stellar 
+                soundtrack with music that really stands 
+                out and are all really good. One of my favorite 
+                aspects is social links where you can hangout 
+                with specific characters and build a better 
+                bond and learn more about them, making these 
+                characters feel even more life like than they 
+                already do." -Zach</p>
+
+            <p style="width: 50%; float:left;"><img src="./images/favicon-16x16.png" alt="">
+                "SMT draws you in with its dark and 
+                intriguing world-building and sticks 
+                the landing with its innovative and 
+                best-in-class JRPG combat." -Steven</p>
         </section>
 
     </main>
