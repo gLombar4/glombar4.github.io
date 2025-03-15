@@ -52,6 +52,24 @@
         section.what>figure>figcaption{
             text-align: center;
         }
+        section.personal-experience>figure>img{
+            justify-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section.personal-experience>figure>figcaption{
+            text-align: center;
+        }
+        section.timeline>figure>img{
+            justify-content: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        section.timeline>figure>figcaption{
+            text-align: center;
+        }
 
         nav{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -107,14 +125,15 @@
         <!--Minimum of 3 total things of content under each h2-->
         <!--At least a figure on each section (img and figcaption))-->
         
-        <section id="personal-experience">
+        <section id="personal-experience" class="personal-experience">
             <!--My history with the series-->
             <h2>My Personal Experience With the Series</h2>
             <!--TODO: Picture of P5 Hours/Steam Library-->
             <figure>
-                <img src="" alt="">
+                <img src="./images/p5hours.png" alt="">
                 <figcaption>
-                    
+                    <em>My steam stats for Persona 5 Royal. Not pictured: the 800+ hours
+                    I have from playing on PS4</em>
                 </figcaption>
             </figure>
             <p><img src="./images/favicon-16x16.png" alt="">
@@ -165,14 +184,15 @@
 
         </section>
 
-        <section id="timeline">
+        <section id="timeline" class="timeline">
             <!--Timeline of SMT-->
             <h2>Timeline of the Series</h2>
             <!--TODO: Picture of DDS Novel Cover-->
             <figure>
-                <img src="" alt="">
+                <img src="./images/dds.jpg" alt="">
                 <figcaption>
-
+                    <em>The cover of Aya Nishitani's Digital Devil Story: Megami Tensei.
+                    The origin of the series.</em>
                 </figcaption>
             </figure>
             <table>
