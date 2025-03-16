@@ -42,7 +42,7 @@
             border: 1px solid black;
             padding: 0.5rem;
         }
-        section.what>figure>img{
+         section.what>figure>img{
             width:40%;
             justify-content: center;
             display: block;
@@ -52,31 +52,13 @@
         section.what>figure>figcaption{
             text-align: center;
         }
-        section.personal-experience>figure>img{
+        section>figure>img{
             justify-content: center;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-        section.personal-experience>figure>figcaption{
-            text-align: center;
-        }
-        section.timeline>figure>img{
-            justify-content: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        section.timeline>figure>figcaption{
-            text-align: center;
-        }
-        section.how>figure>img{
-            justify-content: center;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        section.how>figure>figcaption{
+        section>figure>figcaption{
             text-align: center;
         }
 
@@ -250,12 +232,12 @@
                 in the off periods.</p>
         </section>
 
-        <section id="platforms">
+        <section id="platforms" class="platforms">
             <!--Platforms & their history with the series-->
             <h2>SMT on Different Platforms</h2>
             <!--TODO: Collage of platforms the series has appeared on-->
             <figure>
-                <img src="" alt="">
+                <img src="./images/platforms.png" alt="" style="width:50%;">
                 <figcaption>
                     
                 </figcaption>
@@ -266,6 +248,12 @@
                 like PS5, Switch, XBOX and PC. Unfortunately, some titles are either landlocked 
                 to their console (SMT IV on the 3DS), or untranslated into english. Emulation 
                 is sometimes the only viable way to play the older series titles.</p>
+                <p><img src="./images/favicon-16x16.png" alt="">
+                    SMT IV, for instance, is available on no platforms except the 3DS.
+                    A console whose e-shop service has been taken online, and is now left to 
+                    the whims of scalpers on the internet.
+                    Emulation really is more convenient, which is a shame.
+                </p>
         </section>
 
         <section id="how" class="how">
@@ -304,14 +292,17 @@
 
         </section>
 
-        <section id="why">
+        <section id="why" class="why">
             <!--What draws people to the series-->
             <h2>Why Play This Series?</h2>
             <!--TODO: SMT IV Samurai looking out at Tokyo from Sky Tower-->
             <figure>
-                <img src="" alt="">
+                <img src="./images/smt iv sams.png" alt="">
                 <figcaption>
-                    
+                    <em>
+                        A screenshot from SMT IV showing the protagonists looking out
+                        on the underground city of Tokyo
+                    </em>
                 </figcaption>
             </figure>
             <!--Explain the uniqueness-->
@@ -355,11 +346,8 @@
                 the landing with its innovative and 
                 best-in-class JRPG combat." -Steven</p>
         </section>
-
     </main>
-
     <footer>
-
     </footer>
     <script src="script.js" defer></script>
 </body>
