@@ -8,20 +8,20 @@ const sections = [personalSection, whatSection, timelineSection, platformsSectio
 
 function hideSections(sectionId) {
     const currentSection = document.getElementById(sectionId);
-    sections.forEach(section => {
+    sections.forEach((section) => {
         if (section !== currentSection) {
             section.style.display = "none";
         }
-    })
+    });
     currentSection.style.display = "block";
 }
 
 function onLoad() {
     const currentSection = document.getElementById("what");
     sections.forEach(section => {
-        if (section !== currentSection) {
+        if ((section) !== currentSection) {
             section.style.display = "none";
         }
-    })
+    });
     currentSection.style.display = "block";
 }
