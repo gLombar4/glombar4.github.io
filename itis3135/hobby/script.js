@@ -18,7 +18,7 @@ function hideSections(sectionId) {
 
 function onLoad() {
     const currentSection = document.getElementById("what");
-    sections.forEach(section => {
+    sections.forEach((section) => {
         if ((section) !== currentSection) {
             section.style.display = "none";
         }
