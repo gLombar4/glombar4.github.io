@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garrett Lombard's Geriatric Locust || ITIS 3135 || Tables</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 0.25rem;
+        }
+        
+        .complex tr:nth-child(1){
+            background-color: black;
+            color: lightgray;
+        }
+        .complex tr:nth-child(2), .complex tr:nth-child(3){
+            background-color: lightgray;
+        }
+        .complex tr:nth-child(4), .complex tr:nth-child(5){
+            background-color: white;
+        }
+        .complex tr:nth-child(6), .complex tr:nth-child(7){
+            background-color: lightgray;
+        }
+        .complex tr:nth-child(8){
+            background-color: white;
+        }
+        .complex tr:nth-child(9){
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div data-include="components/header.html"></div>
+
+<main>
+<h2>Whimsical Company - HTML Tables</h2>
+
+<h3>My Tabular Data</h3>
+<ol>
+    <li>
+        Kazuma Kiryu judgmentkazzy@gtojo.com 100
+    </li>
+    <li>
+        Goro Majima gorogorocham@tojo.com 100
+    </li>
+    <li>
+        Shun Akiyama skyfinance@kamuro.com 101
+    </li>
+    <li>
+        Haruka Sawamura mglory@okina.com 200
+    </li>
+    <li>
+        Ichiban Kasuga yokohero@revolve.com 60
+    </li>
+    <li>
+        Saeko Mukoda sacchan@revolve.com 75
+    </li>
+    <li>
+        Taiga Saejima massivefire@tojo.com 80
+    </li>
+</ol>
+<table class="first">
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Salary</th>
+    </tr>
+    <tr>
+        <td>Kazuma Kiryu</td>
+        <td>judgmentkazzy@tojo.com</td>
+        <td>$100,000</td>
+    </tr>
+    <tr>
+        <td>Goro Majima</td>
+        <td>gorogorochan@tojo.com</td>
+        <td>$100,000</td>
+    </tr>
+    <tr>
+        <td>Shun Akiyama</td>
+        <td>skyfinance@kamuro.com</td>
+        <td>$101,000</td>
+    </tr>
+    <tr>
+        <td>Haruka Sawamura</td>
+        <td>mglory@okina.com</td>
+        <td>$200,000</td>
+    </tr>
+    <tr>
+        <td>Ichiban Kasuga</td>
+        <td>yokohero@revolve.com</td>
+        <td>$60,000</td>
+    </tr>
+    <tr>
+        <td>Saeko Mukoda</td>
+        <td>sacchan@revolve.com</td>
+        <td>$75,000</td>
+    </tr>
+    <tr>
+        <td>Taiga Saejima</td>
+        <td>massivefire@tojo.com</td>
+        <td>$80,000</td>
+    </tr>
+</table>
+
+<h3>Employee Data in Complex Table</h3>
+
+<table class="complex">
+    <th>Department</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Salary</th>
+    </tr>
+    <tr>
+        <td rowspan="2">CEOs</td>
+        <td>Kazuma Kiryu</td>
+        <td>judgmentkazzy@tojo.com</td>
+        <td>$100,000</td>
+    </tr>
+    <tr>
+        <td>Goro Majima</td>
+        <td>gorogorochan@tojo.com</td>
+        <td>$100,000</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Marketing</td>
+        <td>Shun Akiyama</td>
+        <td>skyfinance@kamuro.com</td>
+        <td>$101,000</td>
+    </tr>
+    <tr>
+        <td>Haruka Sawamura</td>
+        <td>mglory@okina.com</td>
+        <td>$200,000</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Product Development</td>
+        <td>Ichiban Kasuga</td>
+        <td>yokohero@revolve.com</td>
+        <td>$60,000</td>
+    </tr>
+    <tr>
+        <td>Saeko Mukoda</td>
+        <td>sacchan@revolve.com</td>
+        <td>$75,000</td>
+    </tr>
+    <tr>
+        <td>The Muscle</td>
+        <td>Taiga Saejima</td>
+        <td>massivefire@tojo.com</td>
+        <td>$80,000</td>
+    </tr>
+    <tr>
+        <td colspan="3" style="text-align: right;">
+            Total Salary Budget: 
+        </td>
+        <td>$716,000</td>
+    </tr>
+</table>
+</main>
+<div data-include="components/footer.html"></div>
+<script src="scripts/include.js"></script>
+</body>
+</html>
