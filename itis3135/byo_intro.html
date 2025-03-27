@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garrett Lombard || ITIS3135 || BYO Intro</title>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <style>
+        html{
+            background-color: lightblue;
+
+        }
+        label, input, button{
+            display:block;
+            margin: auto;
+            color: darkblue;
+        }
+        label{
+        text-align: center;
+        padding:0.3rem;
+        }
+        input{
+            width:50%;
+            /* padding-bottom: 1rem; */
+        }
+        .submit{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width:10%
+        }
+        .reset{
+            width:10%;
+            margin-bottom: 20px;
+        }
+        .file{
+            display:block;
+            margin:auto;
+        }
+        p{
+            text-align: center;
+            max-width: 50%;
+            display: block;
+            margin: auto;
+        }
+        #checkbox{
+            margin-top: 1rem;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+    <main>
+        <h2>BYO Intro</h2>
+
+        <h3>Time to BYO Intro page, please fill out the form
+            below to do so.
+        </h3>
+        <!--Form Items:
+        Name
+        Mascot
+        Image
+        Image Caption
+        Personal Background
+        Professional Background
+        Academic Background
+        Background in web development
+        Primary Computer Platform
+        Courses being taken
+        Funny thing?
+        Anything else?
+        Checkbox for consent-->
+        <section id="form">
+        <form action="submit">
+            <label for="Name">Name: </label>
+            <input type="text" id="name" required>
+
+            <label for="Mascot">Mascot: </label>
+            <input type="text" id="mascot" required>
+
+            <label id="image" for="Image">Picture of you: </label>
+            <input class="file" type="file" required accept="image/jpeg, image/png">
+
+            <label for="Image-Caption">Caption for your image: </label>
+            <input type="text" required>
+
+            <label for="Personal-Background">Personal Background: </label>
+            <input type="text" required>
+
+            <label for="Professional-Background">Professional Background: </label>
+            <input type="text" required>
+
+            <label for="Academic-Background">Academic Background: </label>
+            <input type="text" required>
+
+            <label for="Web-Dev-Background">Background in web development: </label>
+            <input type="text" required>
+
+            <label for="Computer-Platform">Primary Computer Platform: </label>
+            <input type="text" required>
+
+            <!--TODO: JS Functionality. Click a button to open up text entry-->
+            <label for="Courses" id="courses">Courses you're currently taking: </label>
+            <p id="courselist"></p>
+            <button type="button" onclick="addCourse()" >Add Course</button>
+
+            <label for="Funny-Thing">Something funny to add? </label>
+            <input type="text">
+
+            <label for="Anything-Else">Anything else you'd like to say, say it here: </label>
+            <input type="text">
+
+            <input id="checkbox" type="checkbox" required>
+            <p>"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</p>
+
+            <button class="submit"type="submit">Submit</button>
+            <input type="reset" value="Reset" class="reset">
+
+        </form>
+    </section>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/include.js"></script>  
+    <script src="scripts/survey.js"></script> 
+</body>
+</html>
