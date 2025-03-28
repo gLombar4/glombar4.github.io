@@ -53,8 +53,8 @@
         <div data-include="components/header.html"></div>
     </header>
     <main>
+        <div id="wipe">
         <h2>BYO Intro</h2>
-
         <h3>Time to BYO Intro page, please fill out the form
             below to do so.
         </h3>
@@ -74,49 +74,53 @@
         Checkbox for consent-->
         <section id="form">
         <form action="submit">
-            <label for="Name">Name: </label>
+        
+            <label for="Name" id="name-label">Name: </label>
             <input type="text" id="name" required>
 
             <label for="Mascot">Mascot: </label>
             <input type="text" id="mascot" required>
 
-            <label id="image" for="Image">Picture of you: </label>
-            <input class="file" type="file" required accept="image/jpeg, image/png">
+            <label  for="Image">Picture of you: </label>
+            <input id="image" class="file" type="file" required accept="image/jpeg, image/png">
 
             <label for="Image-Caption">Caption for your image: </label>
-            <input type="text" required>
+            <input type="text" id="image-caption" required>
 
             <label for="Personal-Background">Personal Background: </label>
-            <input type="text" required>
+            <input type="text" id="personal-background" required >
 
             <label for="Professional-Background">Professional Background: </label>
-            <input type="text" required>
+            <input type="text" id="professional-background" required>
 
             <label for="Academic-Background">Academic Background: </label>
-            <input type="text" required>
+            <input type="text" id="academic-background" required>
 
             <label for="Web-Dev-Background">Background in web development: </label>
-            <input type="text" required>
+            <input type="text" id="web-dev-background" required>
 
             <label for="Computer-Platform">Primary Computer Platform: </label>
-            <input type="text" required>
+            <input type="text" id="computer-platform" required>
 
-            <!--TODO: JS Functionality. Click a button to open up text entry-->
             <label for="Courses" id="courses">Courses you're currently taking: </label>
             <p id="courselist"></p>
             <button type="button" onclick="addCourse()" >Add Course</button>
 
             <label for="Funny-Thing">Something funny to add? </label>
-            <input type="text">
+            <input type="text" id="funny-thing">
 
             <label for="Anything-Else">Anything else you'd like to say, say it here: </label>
-            <input type="text">
+            <input type="text" id="anything-else">
 
             <input id="checkbox" type="checkbox" required>
             <p>"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</p>
-
-            <button class="submit"type="submit">Submit</button>
-            <input type="reset" value="Reset" class="reset">
+        
+            <button class="submit" type="button" onclick="submits()" >Submit</button>
+        </div>
+        <div id="append"></div>
+        <div id="loadImage"></div>
+            <button type="button" onclick="window.location.reload()">Reset</button>
+            
 
         </form>
     </section>

@@ -1,12 +1,13 @@
-function submit() {
-    
-}
+let labelId;
+let nameIdNum;
+let descriptionIdNum;
+let descriptionLabel;
 
 function addCourse() {
-    const labelId = Math.floor(Math.random() * 10000).toString();
-    const nameIdNum = Math.floor(Math.random() * 10000).toString();
-    const descriptionIdNum = Math.floor(Math.random() * 10000).toString();
-    const descriptionLabel = Math.floor(Math.random() * 10000).toString();
+    labelId = Math.floor(Math.random() * 10000).toString();
+    nameIdNum = Math.floor(Math.random() * 10000).toString();
+    descriptionIdNum = Math.floor(Math.random() * 10000).toString();
+    descriptionLabel = Math.floor(Math.random() * 10000).toString();
     const buttonId = Math.floor(Math.random() * 10000).toString();
     
     const parent = document.getElementById("courselist");
@@ -62,4 +63,65 @@ function removeCourse(labelId, nameIdNum, descriptionLabel, descriptionIdNum, bu
     descLabel.remove();
     descId.remove();
     button.remove();
+}
+function checkRequiredFields() {
+    const requiredFields = document.querySelectorAll("[required]");
+    let allFilled = true;
+  
+    requiredFields.forEach(field => {
+      if (!field.value.trim()) {
+        allFilled = false;
+        field.classList.add("error"); // Add visual feedback
+      } else {
+        field.classList.remove("error"); // Remove error class if filled
+      }
+    });
+  
+    if (!allFilled) {
+      alert("Please fill in all required fields.");
+    }
+    return allFilled;
+  }
+
+function submits() {
+    
+    const wipe = document.getElementById("wipe");
+
+    const name = document.getElementById("name");
+    const mascot = document.getElementById("mascot");
+
+    const image = document.getElementById("image").files[0];
+    const imageUrl = URL.createObjectURL(image);
+    var text = "<img src=\"" + imageUrl + "\" > ";
+    
+    const imageCaption = document.getElementById("image-caption");
+    const personalBackground = document.getElementById("personal-background");
+    const professionalBackground = document.getElementById("professional-background");
+    const academicBackground = document.getElementById("academic-background");
+    const webDevBackground = document.getElementById("web-dev-background");
+    const computerPlatform = document.getElementById("computer-platform");
+    
+    const funnyThing = document.getElementById("funny-thing");
+    const anythingElse = document.getElementById("anything-else");
+    wipe.remove();
+
+    const h2 = document.createElement("h2");
+    h2.innerText = name.value + " || " + mascot.value;
+    document.getElementById('append').appendChild(h2);
+
+    // document.getElementById('loadImage').innerHTML = text;
+    //append to loadImage after this point
+    // var append = document.getElementById('loadImage');
+    //-----------------------------------------------//
+    const figcaption = document.createElement("p");
+    p.textContent= imageCaption.value;
+    document.getElementById('append').appendChild(figcaption);
+    
+    
+
+    
+    
+    
+
+
 }
