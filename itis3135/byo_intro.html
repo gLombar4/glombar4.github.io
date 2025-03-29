@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Garrett Lombard || ITIS3135 || BYO Intro</title>
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <style>
         html{
             background-color: lightblue;
@@ -23,6 +24,14 @@
             width:50%;
             /* padding-bottom: 1rem; */
         }
+        h2{
+            text-align: center;
+            max-width: 50%;
+            display: block;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
         .submit{
             margin-top: 20px;
             margin-bottom: 20px;
@@ -36,7 +45,7 @@
             display:block;
             margin:auto;
         }
-        p{
+        p:not(.caption,.newp){
             text-align: center;
             max-width: 50%;
             display: block;
@@ -44,6 +53,11 @@
         }
         #checkbox{
             margin-top: 1rem;
+        }
+        .image,.caption{
+            justify-content: center;
+            text-align: center;
+            font-style: italic;
         }
 
     </style>
@@ -73,8 +87,8 @@
         Anything else?
         Checkbox for consent-->
         <section id="form">
-        <form action="submit">
-        
+        <form>
+
             <label for="Name" id="name-label">Name: </label>
             <input type="text" id="name" required>
 
@@ -103,7 +117,6 @@
             <input type="text" id="computer-platform" required>
 
             <label for="Courses" id="courses">Courses you're currently taking: </label>
-            <p id="courselist"></p>
             <button type="button" onclick="addCourse()" >Add Course</button>
 
             <label for="Funny-Thing">Something funny to add? </label>
@@ -115,13 +128,11 @@
             <input id="checkbox" type="checkbox" required>
             <p>"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</p>
         
-            <button class="submit" type="button" onclick="submits()" >Submit</button>
+            <button class="submit" onclick="submits();printCourseInfo()" >Submit</button>
         </div>
         <div id="append"></div>
         <div id="loadImage"></div>
             <button type="button" onclick="window.location.reload()">Reset</button>
-            
-
         </form>
     </section>
     </main>
