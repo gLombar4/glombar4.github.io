@@ -12,7 +12,50 @@
     <div data-include="../components/project_nav.html"></div>
     <main>
        <h1>Object-Oriented Programming</h1>
-       
+       <h2>Classes & Objects</h2>
+       <p>Within Java we use Objects, self-contained entities
+        that let us store & manipulate data, and Classes which
+        we use to define these objects.
+        </p>
+        <h2>Classes</h2>
+        <p>If you've seen the examples in "Getting Started" you've seen
+            that we put our main method in "MyClass", but you can have
+            many classes in different files in your program.
+            Let's print "Hello World!" using a class we made.
+        </p>
+        <img src="../images/client_project/newclass.png" alt="creating new class">
+        <p>There's a few things here you may be confused about, so
+            let's go through it.
+        </p>
+        <h3>Instance Variables</h3>
+        <p>This class ("Hello") has 1 variable associated with it: 
+            <span class="code">helloMessage</span>. This is what we are going to print later.
+            We'll have to assign this instance variable to a value in the constructor.
+        </p>
+        <h3>Constructors</h3>
+        <p>Classes in java need a constructor, or a way to actually make objects of that class.
+            The constructor must match the name of the class, thus them both being called "Hello".
+            Within the constructor we've assigned our instance variable to the parameter in our
+            Hello constructor. When we build a Hello object later we're going to specify what the message will be.
+        </p>
+        <h3>Getters & Setters</h3>
+        <p>Notice that "private" word next o helloMessage? This means 
+            that variable is only accessible within this current class. What if we want to retrieve
+            the message belonging to this Hello object, but can't access that variable? We make a Getter.
+            The <span class="code">public String getMessage()</span> method will return the value of that variable.
+        </p>
+        <h2>Objects</h2>
+        <p>Let's actually make that Hello object now.</p>
+        <img src="../images/client_project/createobject.png" alt="creating hello object">
+        <p>We've done it! Here's our new object, contained in the <span class="code">msg</span>
+        variable. Notice we've placed the message we're going to print later inside the parenthesis.
+        Let's retrieve that now.
+        </p>
+        <img src="../images/client_project/getter.png" alt="getter printing message">
+        <p>All done! We've created a Hello object with our own message passed in, and used the getter method to retrieve the
+            message within it. This should give you a basic understand of classes & objects in java.
+        </p>
+
     </main>    
 
 

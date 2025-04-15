@@ -8,3 +8,9 @@ figure,figcaption{
     text-align: center;
     justify-content: center;
 }
+ul{
+    list-style: circle;
+}
+.code{
+    font-family: 'Courier New', Courier, monospace;
+}
