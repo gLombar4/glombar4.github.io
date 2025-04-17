@@ -25,15 +25,21 @@
             <li>Polymorphism</li>
         </ul>
        <!--TODO: Add hint images-->
-       <p>We'll explore these concepts a little more in the
-        "Advanced" section, so for now let's give a brief overview.
-        Show the examples if you're confused!
-       </p>
        <h2>Abstraction</h2>
        <p>
         Abstraction is the process of hiding implementation details
         & allowing a developer to work with only essential components.
+        For example, using a function to handle specific operations that
+        the developer shouldn't be concerned about.
        </p>
+       <button type="button" onclick="showHint('abstract')">Show/Hide Example</button>
+        <div class="hint" id="abstract" style="display: none;">
+            <img src="../images/client_project/abstract.png" alt="abstraction">
+            <p>In this example, we create a function to print a hello message,
+                then we can just use that function later instead of having to perform
+                whatever operation that function contains again.
+            </p>
+        </div>
 
        <h2>Encapsulation</h2>
        <p>If you've seen the "Getting Started" section you've already seen an example of this!
@@ -45,6 +51,20 @@
        <p>Inheritance involves organizing classes into "super" and "sub" classes.
         For example, having an "Animal" superclass, of which "Dog" and "Cat" are subclasses.
        </p>
+       <button type="button" onclick="showHint('inheritance')">Show/Hide Example</button>
+        <div class="hint" id="inheritance" style="display: none;">
+            <img src="../images/client_project/inheritance.png" alt="inheritance example">
+            <p>
+                Here we've defined an "Animal" class & have given all Animal objects
+                a name attribute.
+            </p>
+            <img src="../images/client_project/inheritance2.png" alt="second inheritance example">
+            <p>Now we'll make a Dog class and define it as a subclass of Animal. (Note the <span class="code">Extends</span> keyword.)
+                <span class="code">super(name)</span> makes it so that all Dogs have names, but only Dog objects
+                will have the "breed" attribute we've specified as part of this class. We've just made a superclass-subclass
+                relationship.
+            </p>
+        </div>
 
        <h2>Polymorphism</h2>
        <p>Polymorphism means being able to use the same piece of code on multiple types of objects.
@@ -52,9 +72,18 @@
         to print out information about cats and dogs. Despite being different objects & being made from different classes,
         they are both part of the Animal class, & thus can use polymorphism to their advantage.
        </p>
+       <button type="button" onclick="showHint('polymorph')">Show/Hide Example</button>
+       <div class="hint" id="polymorph" style="display: none;">
+        <img src="../images/client_project/polymorph.png" alt="">
+        <p>Building off the previous inhertiance example, notice how <span class="code">getName()</span>
+        is from the Animal class. Despite this, since Dog and Cat objects are also Animals, they can use this method.
+        </p>
+       </div>
+
     </main>    
 
 
 <script src="../scripts/include.js"></script>
+<script src="hintScript.js"></script>
 </body>
 </html>

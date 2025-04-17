@@ -11,6 +11,17 @@ figure,figcaption{
 ul{
     list-style: circle;
 }
+.additional>li>a{
+    text-decoration: none;
+    color: darkcyan;
+}
+.additional>li>a:visited{
+    text-decoration: none;
+    color:darkcyan;
+}
 .code{
     font-family: 'Courier New', Courier, monospace;
+}
+button{
+    margin-bottom: 1rem;
 }
