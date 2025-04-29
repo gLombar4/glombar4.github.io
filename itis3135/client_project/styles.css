@@ -25,3 +25,7 @@ ul{
 button{
     margin-bottom: 1rem;
 }
+ a{
+    color:darkcyan;
+    text-decoration: none;
+}
